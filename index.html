@@ -1,274 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="./pngs/Yowcry copy.png">
+    <title>William de Bouter</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<div class="navigation">
-      <div class="navigation__logo">
-            <link rel="stylesheet" href="index.css" />
-        <img
-          src="https://i.postimg.cc/28f810MT/rhombus.png"
-          alt="heroes inc logo"
-          class="navigation__img"
-        />
+  <body>
+    <div id="home"></div>
+    <header>
+      <div class="yowcry">
+        <a href="https://www.williamdebouter.com">
+          <img src="./pngs/Yowcry copy.png" alt="Yowcry"></a>
       </div>
 
-      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
-      <label for="nav-toggle" class="navigation__btn">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
-
-      <nav>
-        <ul class="navigation__nav">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">About</a>
+      <nav class="main-nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#home" class="nav__link">Home</a>
           </li>
-          <li class="navigation__item">
-            <a href="#features" class="navigation__link">Features</a>
+          <li class="nav__list-item">
+            <a href="#about" class="nav__link">About</a>
           </li>
-           <li class="navigation__item">
-              <a href="#pricing" class="navigation__link">Pricing</a>
-            </li>
-          <li class="navigation__item">
-            <a href="#testimonials" class="navigation__link">Testimonials </a>
-          </li>
-         <li class="navigation__item">
-            <a href="#contacts" class="navigation__link">Contacts</a>
+          <li class="nav__list-item">
+            <a href="#skills" class="nav__link">Skills</a>
           </li>
         </ul>
       </nav>
-    </div>
-    <header class="header">
-      <div class="header__text">
-        <h1 class="heading-primary">Be The One</h1>
-
-        <p class="heading-primary--sub">
-          <a href="#about" class="heading-primary__link">The Superhero Within</a>
-        </p>
-      </div>
     </header>
-    <main class="container">
-      <section class="about" id="about">
-        <div class="about__content">   <h2 class="heading-secondary">About Heroes Inc.</h2>
-        <p class="paragraph ">
-          In a world of superheroes, we help you enhance your talents to the
-          next level.</p>
-          <p class="paragraph">With an experienced team of engineers, coahces, creators and costume
-          designer, we build your hero experience to the ground up.</p>
-        <p class="paragraph paragraph--accent">You have the skills, we know the drills.</p>
-          
-        </p></div>
-     
+
+    <main>
+      <section class="home-intro">
+        <div class="welcomez">
+          <span class="text1">WELCOME TO</span>
+          <span class="text2">WILLIAM DE BOUTER</span>
+          <div id="countup" class="hidden">
+              <span class="years">00y</span><span class="days">00d</span><span class="hours">00h</span><span class="minutes">00m</span><span class="seconds">00s</span>
+        </div>
+        </div>
       </section>
-      <section class="features " id="features">
-        <div class="features__box features__box--primary">
-          <h3 class="heading-tertiary">Costume Design</h3>
-          <img src="https://i.postimg.cc/XvXnRmBN/superhero.png" alt="" class="features__img">
-          <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam distinctio doloribus facilis ipsa dolorem odit nobis asperiores aliquid minus voluptatem.
+      <div id="about"></div>
+      
+      <div class="home-about" >
+      <div class="columns">
+        <div class="col fade-in">
+          <h3>What is my role?</h3>
+          <p>
+            System Administrator.
           </p>
-          <button class="learn-more">Learn More</button>
         </div>
-        <div class="features__box features__box--tertiary">
-            <h3 class="heading-tertiary">Personal Coach</h3>
-            <img src="https://i.postimg.cc/0ynQR7tn/empower.png" alt="" class="features__img">
-            <p class="paragraph">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate accusantium tenetur tempora, magnam officia maxime doloribus nam aliquam vero ratione!
-            </p>
-            <button class="learn-more learn-more--dark">Learn More</button>
-          </div>
-          <div class="features__box features__box--secondary">
-              <h3 class="heading-tertiary">Professional Training</h3>
-              <img src="https://i.postimg.cc/L8xH02X0/strenght.png" alt="" class="features__img">
-              <p class="paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate accusantium tenetur tempora, magnam officia maxime doloribus nam aliquam vero ratione!
-              </p>
-              <button class="learn-more">Learn More</button>
-            </div>
-            <div class="features__box features__box--primary">
-                <h3 class="heading-tertiary">High Tech Equipment</h3>
-                <img src="https://i.postimg.cc/T3dd9pRD/shield.png" alt="" class="features__img">
-                <p class="paragraph">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit dolorum hic veritatis voluptates expedita. Reprehenderit perferendis est cum necessitatibus aperiam.
-                </p>
-                <button class="learn-more">Learn More</button>
-              </div>
-              <div class="features__box features__box--tertiary">
-                  <h3 class="heading-tertiary">Real Combats</h3>
-                  <img src="https://i.postimg.cc/d0SVDwcT/fight.png" alt="" class="features__img">
-                  <p class="paragraph">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate accusantium tenetur tempora, magnam officia maxime doloribus nam aliquam vero ratione!
-                  </p>
-                  <button class="learn-more learn-more--dark">Learn More</button>
-                </div>
-                <div class="features__box features__box--secondary">
-                    <h3 class="heading-tertiary">Super-hero Stages</h3>
-                    <img src="https://i.postimg.cc/5y84PzYw/hero.png" alt="" class="features__img">
-                    <p class="paragraph">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate accusantium tenetur tempora, magnam officia maxime doloribus nam aliquam vero ratione!
-                    </p>
-                    <button class="learn-more">Learn More</button>
-                  </div>
-      </section>
-      <section class="pricing" id="pricing">
-        <h2 class="heading-secondary pricing__heading--main">Pricing</h2>
-        <div class="pricing__card pricing__card--1">
-          <div class="pricing__picture pricing__picture--1">&nbsp;
-          </div>
-          <div class="pricing__content">
-            <ul class="pricing__list">
-              <li class="pricing__item"> <span class="pricing__heading pricing__heading--1">Standard <span class="pricing__heading--sub">Standard pricing Plan</span><span class="pricing__heading--price pricing__heading--price--1">$750/monthly</span></span>
-
-              </li>
-            
-              <li class="pricing__item">1 Life coach</li>
-              <li class="pricing__item">1 personalized high quality costume
-                </li>
-                <li class="pricing__item">15 combat training sessions</li>
-                <li class="pricing__item">&nbsp;</li>
-            </ul>
-<div class="pricing__buy pricing__buy--1">
- <button class="cta">Buy now</button>
-</div>
-           
-          </div>
-
+        <div class="col fade-in">
+          <h3>Where am I located?</h3>
+          <p>
+            The Netherlands.
+          </p>
         </div>
-        <div class="pricing__card pricing__card--2">
-            <div class="pricing__picture pricing__picture--2">&nbsp;
-            </div>
-            <div class="pricing__content">
-              <ul class="pricing__list">
-                <li class="pricing__item"> <span class="pricing__heading pricing__heading--2">Popular <span class="pricing__heading--sub">Popular pricing Plan</span><span class="pricing__heading--price pricing__heading--price--2">$950/monthly</span></span>
-  
-                </li>
-              
-                <li class="pricing__item">1 Life coach</li>
-                <li class="pricing__item">2 personalized medium tech costumes
-                  </li>
-                  <li class="pricing__item">30 fit and combat training sessions 
-                      
-                      </li>
-                      <li class="pricing__item">1 stage with known super-heroes</li>
-              </ul>
-  <div class="pricing__buy pricing__buy--2">
-   <button class="cta">Buy now</button>
-  </div>
-             
-            </div>
-  
-          </div>
-          <div class="pricing__card pricing__card--3">
-              <div class="pricing__picture pricing__picture--3">&nbsp;
-              </div>
-              <div class="pricing__content">
-                <ul class="pricing__list">
-                  <li class="pricing__item"> <span class="pricing__heading pricing__heading--3">Professional <span class="pricing__heading--sub">Professional pricing Plan</span><span class="pricing__heading--price pricing__heading--price--3">$1200/monthly</span></span>
-    
-                  </li>
-                
-                  <li class="pricing__item">1 Life coach</li>
-                  <li class="pricing__item">3 personalized  high tech costumes and armors
-
-                    </li>
-                    <li class="pricing__item">100 comabat and armor training sessions 
-                      </li>
-                  
-                        <li class="pricing__item">5 real-life stages with known super-heroes
-                          </li>
-                </ul>
-    <div class="pricing__buy pricing__buy--3">
-     <button class="cta">Buy now</button>
-    </div>
-               
-              </div>
-    
-            </div>
-      </section>
-      <section class="testimonials" id="testimonials">
-         <h3 class="heading-tertiary testimonials__heading">Testimonials</h3>
-        <div class="testimonials__box">
-           <div class="testimonials__content">
-            
-          <p class="paragraph testimonials__text">I tought I had all figured out with my self-made lycra costume, but then it reaped open in front of the worst villain and, oh boy I'll never forget. Thanks to Heroes Inc. I've got the best costume for the job and bye bye DIY.</p>
-          <img src="https://i.postimg.cc/NjBMzdxL/chamelion.png" alt="chamelion" class="testimonials__img">
-          <span class="testimonials__name">The Chameleon</span>
+        <div class="col fade-in">
+          <h3>Which operating system did I use?</h3>
+          <p>
+            Windows, MacOS, and Linux.
+          </p>
         </div>
-        </div>
-        <div class="testimonials__box">
-            <div class="testimonials__content">
-           <p class="paragraph testimonials__text">Fighting with the worst riffraff of the universe may seem simple when you can flash lasers from your eyes and fly like a jet, but it's not that easy. The stage in Heroes Inc helped me focus on the combats and use my powers the right way. 
-            </p>
-           <img src="https://i.postimg.cc/W3FbkCsY/fornax.png" alt="Fornax" class="testimonials__img">
-           <span class="testimonials__name">Fornax the Burner</span>
-         </div>
-         </div>
-         <div class="testimonials__box">
-            <div class="testimonials__content">
-           <p class="paragraph testimonials__text">When you are a couple of twin super-heroes it's double the problems. After the training at Heroes Inc, me and my sister have finally got the perfect duo-mortal-moves. Villains BE DOUBLED SCARED, we are breathing down your neck thanks to Heroes Inc.!!
-
-            </p>
-           <img src="https://i.postimg.cc/LXc4BDX9/gemini.png" alt="gemini" class="testimonials__img">
-           <span class="testimonials__name">GEMINI GUARDIANS</span>
-         </div>
-         </div>
-         <div class="testimonials__box">
-            <div class="testimonials__content">
-           <p class="paragraph testimonials__text">I always won every fight. In the beginnig everything was awesome, but at a certain point I began doubting myself. Was I enough for the super-hero world? Did I really do the best? I had the worst case of imposter syndrome, but the life-coaches at Heroes Inc helped me so so much. Thank you guys!! Now I know that I can be the best hero of them all without shame.
-            </p>
-           <img src="https://i.postimg.cc/bNHYkQjP/lacerta.png" alt="Lacerta" class="testimonials__img">
-           <span class="testimonials__name">Lacerta the Humble</span>
-         </div>
-         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer" id="contacts">
-<div class="footer__box">
-<div class="footer__heroes">
-  <h3 class="heading-tertiary">Heroes Inc.</h3>
-  <img src="https://i.postimg.cc/28f810MT/rhombus.png" alt="logo" class="footer__logo">
-  <p class="paragraph">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem distinctio repellendus illo optio cumque deleniti!
-  </p>
-</div>
-</div>
-<div class="footer__box">
-  <div class="footer__categories">
-      <h3 class="heading-tertiary">Categories</h3>
-    <ul class="footer__list">
-      <li class="footer__item"><a href="#" class="footer__link">Costume Design</a> </li>
-      <li class="footer__item"><a href="#" class="footer__link">Coaching</a> </li>
-      <li class="footer__item"> <a href="#" class="footer__link">Training</a> </li>
-      <li class="footer__item"><a href="#" class="footer__link">Stages</a> </li>
-      <li class="footer__item"> <a href="#" class="footer__link">Tech</a> </li>
-    </ul>
-  </div>
-</div>
-<div class="footer__box">
-<div class="footer__contacts">
-  <h3 class="heading-tertiary">Contact Us</h3>
-  <form action="#">
-    <input type="email" placeholder="Your email" class="footer__input">
-    <input type="submit" class="footer__submit">
-  </form>
-</div>
-</div>
-<div class="footer__box">
-  <div class="footer__social">
-      <h3 class="heading-tertiary">Follow US</h3>
-      <div class="footer__socials">   <a href="#"><img src="https://i.postimg.cc/8CCC1s9S/facebook.png" alt="facebook" class="footer__social--img"></a>
-    <a href="#"><img src="https://i.postimg.cc/sxCyZ261/twitter.png" alt="twitter" class="footer__social--img"></a>
-    <a href="#"><img src="https://i.postimg.cc/qBKvBPbz/instagram.png" alt="instagram" class="footer__social--img"></a></div>
- 
-  </div>
-</div>
-
-<div class="footer__box">  
-  <div class="footer__credits">
-  <h3 class="heading-tertiary">Credits</h3>
-        Heroes Inc. template by <a href="https://github.com/starskynder" class="footer__link footer__link--credits" target="_blank">starskynder</a>.
-        Photos  by <a href="https://unsplash.com/" class="footer__link footer__link--credits" target="_blank">unsplash</a>.
-        Icons made by <a href="http://www.freepik.com" title="Freepik" class="footer__link footer__link--credits" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="footer__link footer__link--credits" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" class="footer__link footer__link--credits">CC 3.0 BY</a>
       </div>
-    </div>
-    
-</div>
-    
-    </footer>
+        <h2>About me</h2>
+          <p>Hey there! Thanks for your visit to my digital portfolio! Happy to have you here as we delve into my journey as a System Administrator. My name is William de Bouter, and I would love to share with you my experiences and skills in managing and optimizing IT systems.</p>
+          <p>Since I'm very interested into everything about Information Technology and System Administration, I am committed to continuous learning. I stay updated with the latest trends and technologies by Doing a lot of Researches, Courses, Conferences, etc. I believe that by embracing changes, we can learn something new and develop a better future.</p>
+          <p>Throughout career path, I have gained valuable hands-on experience in a variety of areas including : </p>
+          <div id="skills"></div>
+      </div>
+
+      <div class="home-more-stuff" id="skills">
+        <div class="more-stuff-grid">
+          <img
+            src="./pngs/microsoft.png"
+            alt="Microsoft-365-Logo"
+            class="slide-in from-left"
+          />
+          <p class="slide-in from-right">
+            Harnessing the power of Microsoft 365 admin center to enhance productivity like Exchange, SharePoint, Defender, Entra (Azure Active Directory).
+          </p>
+        </div>
+        <div class="more-stuff-grid">
+          <p class="slide-in from-left">
+            Organizing users permission, creating automation, bulk changes, managing access rights, and migrating tickets to another projects of Jira and spaces in Confluence.
+          </p>
+          <img
+            src="./pngs/atlassian.png"
+            alt="Atlassian-Logo"
+            class="slide-in from-right"
+          />
+        </div>
+        <div class="more-stuff-grid">
+          <img 
+            src="./pngs/monday.png"
+            alt="Monday-Logo"
+            class="slide-in from-left" />
+          <p class="slide-in from-right">
+            Creating integrations to sync tickets one way from Jira to Monday.com or the opposite way using an automation label from Jira.
+          </p>
+        </div>
+        <div class="more-stuff-grid">
+          <p class="slide-in from-left">
+            Basic knowledge for updating firmware, configuring, and monitoring Cisco switches or access points for seamless network operations.
+          </p>
+          <img
+            src="./pngs/cisco.png"
+            alt="Cisco-Logo"
+            class="slide-in from-right"
+          />
+        </div>
+        <div class="more-stuff-grid">
+          <img 
+            src="./pngs/aws.png" 
+            alt="Amazon-Web-Services-Logo" 
+            class="slide-in from-left" />
+          <p class="slide-in from-right">
+            Initiating backup database storage using Amazon Web Services with S3 Bucket by utilizing the AWS Command Line Interface and creating an automation process to transition storage classes to Glacier Deep Archive. Also providing users to have access to it with FTP Client.
+          </p>
+        </div>
+        <div class="more-stuff-grid">
+          <p class="slide-in from-left">
+            Securing all connected devices with Antivirus Cortex XDR by scanning, updating, and removing Malicious Software or Files that contained a virus from the endpoint manager.
+          </p>
+          <img
+            src="./pngs/paloalto.png"
+            alt="Paloalto-Logo"
+            class="slide-in from-right"
+          />
+        </div>
+        <div class="more-stuff-grid">
+          <img 
+            src="./pngs/teamviewer.png" 
+            alt="Teamviewer-Logo" 
+            class="slide-in from-left" />
+          <p class="slide-in from-right">
+            Providing users that required a Premium license from the Management Console and organizing access with user groups, and of course fixing issues with it when working remotely from home.
+          </p>
+        </div>
+        <div class="more-stuff-grid">
+          <p class="slide-in from-left">
+            Organizing users or external companies to have specific access to the repositories or organizations, migrate repositories to another organization team.
+          </p>
+          <img
+            src="./pngs/github.png"
+            alt="Github-Logo"
+            class="slide-in from-right"
+          />
+        </div>
+
+        <div class="sosmed">
+          <a href="https://www.linkedin.com/in/williamdebouter"><img class="sosimg" src="./pngs/in.png" alt="Yowcry" ></a>
+          <a href="mailto:williamdebouter@yahoo.com"><img class="sosimg" src="./pngs/email.png" alt="Yowcry" ></a>
+          <a href="https://github.com/Yowcry"><img class="sosimg" src="./pngs/github sosmed.png" alt="Yowcry" ></a>
+          <a href="https://instagram.com/williamdebouter?igshid=OGQ5ZDc2ODk2ZA=="><img class="sosimg" src="./pngs/insta.png" alt="Yowcry" ></a>
+          <a href="https://steamcommunity.com/id/Yowcry/"><img class="sosimg" src="./pngs/steam.png" alt="Yowcry" ></a>
+        </div>
+      </div>
+
+    </main>
+    <script src="./observers.js"></script>
+    <script src="./countup.js"></script>
+    <script src="./script.js"></script>
+
+  </body>
+</html>
