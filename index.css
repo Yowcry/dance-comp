@@ -39,16 +39,25 @@ nav {
 }
 
 .full-background {
-    background-image: url("https://i.ibb.co/5jGJccD/Indonesia-Open-Bali.png"); /* Replace with your image path */
-    background-size: cover; /* Cover the entire visible part of the screen */
-    background-position: center; /* Center the background image */
-    background-attachment: fixed; /* Fixed background */
+    background-image: url(https://i.ibb.co/5jGJccD/Indonesia-Open-Bali.png);
+    background-size: 34% 100%; /* This stretches the image to fit exactly, but can distort it */
+    background-position: center;
+    background-attachment: fixed;
     position: relative;
-    height: calc(100vh - 40px); /* Adjust height taking header and footer into account */
+    height: calc(100vh - 40px);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px; /* Height of the header */
+    padding-top: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+    .full-background {
+        background-size: contain; /* Adjust so the whole image can be seen on smaller devices */
+        background-position: top center; /* Optional, if the top part of the image is more important */
+    }
 }
 
 #event-info, #schedule, #register {
