@@ -38,6 +38,19 @@ nav {
     background-color: #014f4f;
 }
 
+.full-background {
+    background-image: src="./IndonesiaOpenBali.png"; /* Replace with your image path */
+    background-size: cover; /* Cover the entire visible part of the screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fixed background */
+    position: relative;
+    height: calc(100vh - 40px); /* Adjust height taking header and footer into account */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px; /* Height of the header */
+}
+
 #event-info, #schedule, #register {
     background: #ffffff;
     padding: 20px;
