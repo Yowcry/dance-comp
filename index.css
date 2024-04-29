@@ -131,3 +131,7 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #026262;
 }
+
+.red-text {
+    color: red;
+}
