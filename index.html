@@ -3,25 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indonesia Open Dance</title>
+    <title>Indonesia Open Dance - Registration</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <h1>Indonesia Open</h1>
-        <p>International Dance Competition</p>
+        <div class="hero">
+            <h1>Indonesia Open Dance Competition</h1>
+        </div>
+
+        <div class="nav-container">
+            <nav>
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="staff.html" class="nav__link">Staff</a></li>
+                    <li><a href="hotels.html" class="nav__link">Hotel</a></li>
+                    <li><a href="https://ucwdc.org/line-dance/" class="nav__link">Dances</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="register-container">
+            <a href="#registration" class="nav__link nav__link--btn nav__link--btn--highlight">Register</a>
+        </div>
     </header>
-    <nav>
-        <button class="nav-button">Home</button>
-        <button class="nav-button">Staff</button>
-        <button class="nav-button">Hotel</button>
-        <a href="https://ucwdc.org/line-dance/" class="nav-button">Dances</a>
-    </nav>
-    <div class="full-background">
+
+    <div class="main-content">
+        <section class="full-width-image">
+            <img src="https://i.ibb.co/NSZpnPr/Bali-Poster.png" alt="Indonesia Open Dance" border="0">
+        </section>
+
+        <section id="registration" class="content-section">
+            <h2>Register for the Festival</h2>
+            <form action="https://" method="POST" class="registration-form">
+                <input type="hidden" name="_next" value="https://indonesiadancefestival.com/thank-you">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <input type="submit" value="Register">
+            </form>
+        </section>
     </div>
+
     <footer>
-        <p>Contact Person : Risma Yulana <a href="tel:+62878-2200-2626">+62 878-2200-2626</a> / Fitri Paramitha Primasari <a href="tel:+62818-0863-0108">+62 818-0863-0108</a> / Andy Arthur <a href="tel:+62819-0848-6988">+62 819-0848-6988</a></p>
-        <p class="red-text">Thank you for visiting! This website is currently undergoing maintenance. Please stay tuned for new features and improvements coming soon!</p>
+        <p>&copy; 2024 Indonesia International Dance Festival. All Rights Reserved.</p>
     </footer>
+
+    <script src="transition.js"></script>
 </body>
 </html>
