@@ -1,137 +1,258 @@
-body {
-    font-family: 'Arial', sans-serif;
+html {
+    scroll-behavior: smooth;
+}
+
+* {
     margin: 0;
     padding: 0;
-    color: #333;
-    background: #f4f4f4;
+    box-sizing: border-box;
 }
 
-header {
-    background: #293241;
-    color: #ffffff;
-    padding: 20px 10px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #121212;
+    opacity: 1; /* Ensure opacity starts at 1 */
+    transition: opacity 0.5s ease; /* Add transition to the body */
+}
+
+/* header */
+.hero {
+    background-color: #222;
+    padding: 80px 20px;
     text-align: center;
+    color: #f0f0f0;
+    position: relative;
 }
 
-header h1 {
+.hero h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.nav-container {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.nav__list {
+    list-style: none;
     margin: 0;
-}
-
-nav {
+    padding: 0;
     display: flex;
     justify-content: center;
-    padding: 10px;
-    background-color: #027373;
 }
 
-.nav-button {
-    background-color: #02a9a9;
-    border: none;
-    color: white;
+.nav__link {
+    --spacing: 1em;
     text-decoration: none;
-    font-size: 12px;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.nav-button:hover {
-    background-color: #014f4f;
-}
-
-.full-background {
-    background-image: url(https://i.ibb.co/5jGJccD/Indonesia-Open-Bali.png);
-    background-size: 34% 100%; /* This stretches the image to fit exactly, but can distort it */
-    background-position: center;
-    background-attachment: fixed;
+    color: inherit;
+    display: inline-block;
+    padding: calc(var(--spacing) / 2) var(--spacing);
     position: relative;
-    height: calc(100vh - 40px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.nav__link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: var(--spacing);
+    right: var(--spacing);
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
+}
+
+.nav__link:hover::after {
+    transform: scaleX(1);
+}
+
+.register-container {
+    background-color: #555;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    height: 100px;
 }
 
-
-
-@media (max-width: 768px) {
-    .full-background {
-        background-size: contain; /* Adjust so the whole image can be seen on smaller devices */
-        background-position: top center; /* Optional, if the top part of the image is more important */
-    }
-}
-
-#event-info, #schedule, #register {
-    background: #ffffff;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-}
-
-#event-info h2, #schedule h2, #register h2 {
+/* registration button */
+.register-btn {
+    background-color: limegreen;
     color: #333;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
-#performers {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background: #edf6f9;
+.register-btn:hover {
+    background-color: #333;
+    color: limegreen;
 }
 
-.performer {
-    text-align: center;
-    flex-basis: 45%;
+/* image */
+.full-width-image {
+    margin: 0;
+    padding: 0;
 }
 
-.performer img {
-    max-width: 100%;
+.full-width-image img {
+    width: 100%;
     height: auto;
-    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 0;
 }
 
-footer {
+.content-section {
+    padding: 60px 20px;
     text-align: center;
-    padding: 10px 20px;
-    background: #293241;
-    color: white;
+    color: #e0e0e0;
+    background-color: #1f1f1f;
 }
 
-footer a {
-    color: #ee6c4d;
-    text-decoration: none;
+.content-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f0f0f0;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.content-section p {
+    font-size: 1.2em;
+    color: #c0c0c0;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-form {
+/* registration */
+.registration-form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #2c2c2c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="submit"] {
-    padding: 8px;
-    margin: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+.registration-form label {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #e0e0e0;
 }
 
-form input[type="submit"] {
+.registration-form input[type="text"],
+.registration-form input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+}
+
+.registration-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: #028482;
+    transition: background-color 0.3s;
+}
+
+.registration-form input[type="submit"]:hover {
+    background-color: #777;
+}
+
+/* footer */
+footer {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__link {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+    }
+
+    .content-section {
+        padding: 40px 20px;
+    }
+
+    .registration-form {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .registration-form input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* staff */
+#staff-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#staff-list ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
     color: white;
 }
 
-form input[type="submit"]:hover {
-    background-color: #026262;
+#staff-list ul li strong {
+    font-weight: bold;
+    color: white;
 }
 
-.red-text {
-    color: red;
+/* hotel */
+#hotel-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#hotel-info ul li {
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: white;
 }
