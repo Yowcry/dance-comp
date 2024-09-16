@@ -11,29 +11,29 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #e0e0e0;
-    background-color: #121212;
+    color: #4a4a4a; /* Dark grey for text */
+    background-color: #e5d5b0; /* Dark creme background */
     opacity: 1; /* Ensure opacity starts at 1 */
     transition: opacity 0.5s ease; /* Add transition to the body */
 }
 
 /* header */
 .hero {
-    background-color: #222;
+    background-color: #d9c4a2; /* Deeper beige for the header */
     padding: 80px 20px;
     text-align: center;
-    color: #f0f0f0;
+    color: #4a4a4a; /* Dark grey text */
     position: relative;
 }
 
 .hero h1 {
     font-size: 3em;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for text */
 }
 
 .nav-container {
-    background-color: #333;
+    background-color: #e5d5b0; /* Dark creme for navigation */
     padding: 20px 0;
 }
 
@@ -48,14 +48,13 @@ body {
 .nav__link {
     --spacing: 1em;
     text-decoration: none;
-    color: inherit;
+    color: #4a4a4a; /* Dark grey for nav links */
     display: inline-block;
     padding: calc(var(--spacing) / 2) var(--spacing);
     position: relative;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 1.4rem;
-    color: #ffffff;
 }
 
 .nav__link:after {
@@ -75,7 +74,7 @@ body {
 }
 
 .register-container {
-    background-color: #555;
+    background-color: #b2a382; /* Muted olive green for registration section */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,8 +83,8 @@ body {
 
 /* registration button */
 .register-btn {
-    background-color: limegreen;
-    color: #333;
+    background-color: #c5a880; /* Taupe for buttons */
+    color: #ffffff; /* White text */
     border: none;
     padding: 15px 30px;
     border-radius: 25px;
@@ -97,8 +96,8 @@ body {
 }
 
 .register-btn:hover {
-    background-color: #333;
-    color: limegreen;
+    background-color: #a68b5b; /* Dark beige for hover effect */
+    color: #ffffff; /* White for hover text */
 }
 
 /* image */
@@ -119,19 +118,19 @@ body {
 .content-section {
     padding: 60px 20px;
     text-align: center;
-    color: #e0e0e0;
-    background-color: #1f1f1f;
+    color: #4a4a4a; /* Dark grey for content text */
+    background-color: #e5d5b0; /* Dark creme for content background */
 }
 
 .content-section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #f0f0f0;
+    color: #4a4a4a; /* Dark grey for headings */
 }
 
 .content-section p {
     font-size: 1.2em;
-    color: #c0c0c0;
+    color: #6b6b6b; /* Lighter grey for paragraphs */
     max-width: 800px;
     margin: 0 auto;
 }
@@ -143,16 +142,16 @@ body {
     align-items: center;
     max-width: 400px;
     margin: 0 auto;
-    background-color: #2c2c2c;
+    background-color: #b2a382; /* Muted olive for form background */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .registration-form label {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #e0e0e0;
+    color: #4a4a4a; /* Dark grey for labels */
 }
 
 .registration-form input[type="text"],
@@ -161,16 +160,16 @@ body {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
-    border: 1px solid #333;
+    border: 1px solid #a68b5b; /* Dark beige for input border */
     border-radius: 5px;
-    background-color: #1f1f1f;
-    color: #f0f0f0;
+    background-color: #d9c4a2; /* Deeper beige for input fields */
+    color: #4a4a4a; /* Dark grey for input text */
 }
 
 .registration-form input[type="submit"] {
     padding: 10px 20px;
-    background-color: #555;
-    color: white;
+    background-color: #c5a880; /* Taupe for submit button */
+    color: #ffffff; /* White text */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -178,13 +177,13 @@ body {
 }
 
 .registration-form input[type="submit"]:hover {
-    background-color: #777;
+    background-color: #a68b5b; /* Dark beige for hover effect */
 }
 
 /* footer */
 footer {
-    background-color: #1c1c1c;
-    color: #f0f0f0;
+    background-color: #d9c4a2; /* Deeper beige for footer */
+    color: #4a4a4a; /* Dark grey for footer text */
     padding: 20px 0;
     text-align: center;
     position: relative;
@@ -237,12 +236,12 @@ footer p {
 #staff-list ul li {
     font-size: 1.2em;
     margin: 10px 0;
-    color: white;
+    color: #4a4a4a; /* Dark grey for staff list */
 }
 
 #staff-list ul li strong {
     font-weight: bold;
-    color: white;
+    color: #4a4a4a; /* Bold dark grey for staff names */
 }
 
 /* hotel */
@@ -254,5 +253,5 @@ footer p {
 #hotel-info ul li {
     font-size: 1.2em;
     margin: 15px 0;
-    color: white;
+    color: #4a4a4a; /* Dark grey for hotel info */
 }
