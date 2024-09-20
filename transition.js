@@ -1,14 +1,3 @@
-    document.addEventListener('DOMContentLoaded', () => {
-    const currentPath = window.location.pathname;
-
-    if (currentPath === "/staff.html") {
-      window.location.replace("/staff");
-    } else if (currentPath === "/index.html") {
-      window.location.replace("/home");
-    } else if (currentPath === "/hotels.html") {
-      window.location.replace("/hotel");
-    }
-
     const content = document.querySelector('.content-section');
     const image = document.querySelector('.full-width-image img');
     
